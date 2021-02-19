@@ -1,9 +1,7 @@
 # openbox-window-snapping
 Window snapping script for openbox. Multiple Monitors.
 
-**Setup**
-
-Sorry, it's kind of a lot.
+**Setup** Sorry, it's kind of a lot.
 
 You need run the script when dragging a window. You can do this by adding the following to "~/config/openbox/rc.xml", or whatever the name of the file is.
 ```
@@ -51,15 +49,15 @@ xdotool
 wmctrl
 ```
   
-**Notes:**
+**Notes**
 
-This is currently laggy, and will lag your desktop.
-If have any issues PLEASE tell me, I'm new to releasing projects. While this isn't a big project I still want to be better.
+- This is currently laggy, and will lag your desktop.
+- If have any issues PLEASE tell me, I'm new to releasing projects. While this isn't a big project I still want to be better.
 
 
 **ToDO**
 
-Write this in python for better performace. Grep is apparently really slow.
-Auto select/use mouse/mice
-Auto determine title size
-Create terminal commands to set options
+- Write this in python for better performace. Grep is apparently really slow.
+- Auto select/use mouse/mice
+- Auto determine title size
+- Create terminal commands to set options
