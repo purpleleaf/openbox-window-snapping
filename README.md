@@ -1,12 +1,18 @@
 # openbox-window-snapping
-Window snapping script for openbox. Multiple Monitors.
+Window snapping for openbox. Multiple Monitors.
 
-**Setup** Sorry, it's kind of a lot.
+**Setup**
 
 You need run the script when dragging a window. You can do this by adding the following to "~/config/openbox/rc.xml", or whatever the name of the file is.
 ```
 <action name="Execute">
     <command>/home/$USER$/scripts/winDragDrog.sh</command>
+</action>
+````
+or using the binary
+```
+<action name="Execute">
+    <command>/home/$USER$/scripts/aeroWindowDragging</command>
 </action>
 ````
 
@@ -18,7 +24,7 @@ I would suggest you add it to the file like this
         ...
         <mousebind button="Left" action="Drag">
             <action name="Execute">
-                <command>/home/$USER$/scripts/winDragDrog.sh</command>
+                <command>/home/$USER$/scripts/aeroWindowDragging</command>
             </action>
             <action name="Move"/>
         </mousebind>
@@ -51,13 +57,11 @@ wmctrl
   
 **Notes**
 
-- This is currently laggy, and will lag your desktop.
-- If have any issues PLEASE tell me, I'm new to releasing projects. While this isn't a big project I still want to be better.
+- The script is laggy, I suggest using the binary.
 
 
 **ToDO**
 
-- Write this in python for better performace. Grep is apparently really slow.
 - Auto select/use mouse/mice
 - Auto determine title size
 - Create terminal commands to set options
